@@ -1,0 +1,1 @@
+<h1>Barang view index</h1>

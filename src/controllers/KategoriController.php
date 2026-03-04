@@ -1,6 +1,6 @@
 <?php
 
-class DefaultApp extends BaseController
+class KategoriController extends BaseController
 {
     public function index()
     {
@@ -8,7 +8,7 @@ class DefaultApp extends BaseController
             'title' => 'Home'
         ];
         $this->view('template/header', $data);
-        $this->view('home/index', $data);
+        $this->view('kategori/index');
         $this->view('template/footer');
     }
 }

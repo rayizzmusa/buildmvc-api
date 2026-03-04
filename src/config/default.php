@@ -1,3 +1,3 @@
 <?php
 
-define("BASEURL", "http://localhost/mvcpojokkode/");
+define("BASEURL", "http://localhost/mvcpojokkode");
