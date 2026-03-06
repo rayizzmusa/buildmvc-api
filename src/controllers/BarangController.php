@@ -2,17 +2,34 @@
 
 class BarangController extends BaseController
 {
+    private $barangModel;
+
+    public function __construct()
+    {
+        $this->barangModel = $this->model('Barang_model');
+    }
+
+
     public function index()
     {
         $data = [
-            'title' => 'Barang'
+            'title' => 'Barang',
+            'AllBarang' => $this->barangModel->getAll()
         ];
+
         $this->view('template/header', $data);
-        $this->view('barang/index');
+        $this->view('barang/index', $data);
         $this->view('template/footer');
     }
-    public function edit($id1 = 0, $id2 = "")
+
+    public function insert()
     {
-        echo "edit barang " . $id1 . " " . $id2;
+        $data = [
+            'title' => 'Barang',
+        ];
+
+        $this->view('template/header', $data);
+        $this->view('barang/insert');
+        $this->view('template/footer');
     }
 }
