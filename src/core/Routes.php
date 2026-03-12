@@ -13,7 +13,7 @@ class Routes
         $router->get('/barang/insert', ['BarangController', 'insert']);
         $router->get('/barang/edit', ['BarangController', 'edit']);
         $router->post('/barang/insert_barang', ['BarangController', 'insert_barang']);
-        $router->post('/barang/edit_barang', ['BarangController', 'edit_barang2']);
+        $router->post('/barang/edit_barang', ['BarangController', 'edit_barang']);
 
         $router->get('/kategori', ['KategoriController', 'index']);
 

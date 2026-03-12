@@ -33,7 +33,7 @@ Messages::flash();
                         <td><?= $barang['jumlah']; ?></td>
                         <td><?= $barang['harga_satuan']; ?></td>
                         <td><?= $barang['expire_date']; ?></td>
-                        <td><a href=""><i class="fa-solid fa-pen-to-square"></i> Edit</a></td>
+                        <td><a href="<?= BASEURL ?>/barang/edit/<?= $barang['barang_id'] ?>"><i class="fa-solid fa-pen-to-square"></i> Edit</a></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
