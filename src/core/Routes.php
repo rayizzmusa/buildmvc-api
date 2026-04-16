@@ -11,11 +11,10 @@ class Routes
         $router->setDefaultMethod('index');
 
         $router->get('/barang', ['BarangController', 'index']);
-        $router->get('/barang/indexController', ['BarangController', 'index']);
-        $router->get('/barang/insert', ['BarangController', 'insert']);
-        $router->get('/barang/edit/(:id)', ['BarangController', 'edit']);
-        $router->post('/barang/insert_barang', ['BarangController', 'insert_barang']);
-        $router->post('/barang/edit_barang', ['BarangController', 'edit_barang']);
+        $router->get('/barang/(:id)', ['BarangController', 'index']);
+        $router->patch('/barang/(:id)', ['BarangController', 'edit']);
+        $router->post('/barang', ['BarangController', 'insert']);
+        $router->delete('/barang/(:id)', ['BarangController', 'delete']);
 
         $router->get('/kategori', ['KategoriController', 'index']);
 

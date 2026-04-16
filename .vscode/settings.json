@@ -15,5 +15,6 @@
             "database": "mvcpojokkode",
             "password": ""
         }
-    ]
+    ],
+    "kiroAgent.configureMCP": "Disabled"
 }

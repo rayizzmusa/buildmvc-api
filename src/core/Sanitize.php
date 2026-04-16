@@ -51,7 +51,7 @@ class Sanitize
         if ($fields) {
             foreach ($fields as $key => $field) {
                 if ($field == "string") {
-                    $tempvar = strip_tags($inputs[$key]);
+                    $tempvar = strip_tags($inputs[$key] ?? '');
                     $inputs[$key] = $tempvar;
                 }
             }
